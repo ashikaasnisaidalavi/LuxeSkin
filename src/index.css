@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-luxe-cream: #faf7f2;
+  --color-luxe-brown: #4a3428;
+  --color-luxe-gold: #b69a69;
+  --color-luxe-muted: #82766c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #faf7f2;
+  color: #4a3428;
+  font-family: "Segoe UI", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

@@ -1,0 +1,538 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Hydrating Face Serum",
+      "brand": "LuxeSkin",
+      "category": "Serum",
+      "price": 899,
+      "description": "A lightweight hydrating serum for soft, radiant skin.",
+      "image": "https://clemenceorganics.com/cdn/shop/files/Clemence_Organics_Repair_Face_Serum_6b74d494-7475-48f7-a783-ae06db483964_2000x.jpg?v=1774491668",
+      "stock": 20,
+      "rating": 4.5
+    },
+    {
+      "id": "2",
+      "name": "Gentle Foaming Cleanser",
+      "brand": "LuxeSkin",
+      "category": "Cleanser",
+      "price": 599,
+      "description": "A gentle daily cleanser that removes dirt and impurities.",
+      "image": "https://kblcosmetics.com/cdn/shop/articles/facial-cleanser_1200x1200.png?v=1756406516",
+      "stock": 15,
+      "rating": 4.3
+    },
+    {
+      "id": "3",
+      "name": "Daily Glow Moisturizer",
+      "brand": "LuxeSkin",
+      "category": "Moisturizer",
+      "price": 749,
+      "description": "A nourishing moisturizer for everyday hydration.",
+      "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+      "stock": 12,
+      "rating": 4.6
+    },
+    {
+      "id": "4",
+      "name": "Vitamin C Brightening Serum",
+      "brand": "LuxeSkin",
+      "category": "Serum",
+      "price": 1099,
+      "description": "A brightening serum designed for a radiant-looking complexion.",
+      "image": "https://glowx.pk/cdn/shop/files/vitamin_c_serum.jpg?v=1770305346&width=416",
+      "stock": 8,
+      "rating": 4.7
+    },
+    {
+      "id": "5",
+      "name": "Daily Sunscreen SPF 50",
+      "brand": "LuxeSkin",
+      "category": "Sunscreen",
+      "price": 699,
+      "description": "A lightweight sunscreen for daily sun protection.",
+      "image": "https://cdn11.bigcommerce.com/s-ilgxsy4t82/images/stencil/1280x1280/products/89251/205001/61G5vy61YYL._SL1500___90021.1664190731.jpg?c=1&imbypass=on",
+      "stock": 10,
+      "rating": 4.4
+    },
+    {
+      "id": "6",
+      "name": "Overnight Repair Cream",
+      "brand": "LuxeSkin",
+      "category": "Moisturizer",
+      "price": 1299,
+      "description": "A rich night cream for your evening skincare routine.",
+      "image": "https://medias.watsons.com.sg/publishing/WTCSG-81441-front-zoom.jpg?version=1757612408",
+      "stock": 10,
+      "rating": 4.8
+    }
+  ],
+  "users": [
+    {
+      "name": "Ashika",
+      "email": "ashikaf40@gmail.com",
+      "password": "!C7L7bsnvGe4S@s",
+      "id": "iy287vUoExM"
+    },
+    {
+      "name": "rinsha",
+      "email": "rinshasherin@gmail.com",
+      "password": "st@@Vj5pL8JWG2r",
+      "id": "48CShtZ4j1o"
+    },
+    {
+      "name": "vasudev",
+      "email": "vasudevcp@gmail.com",
+      "password": "mhB@c7Rg3h4KDAp",
+      "id": "dzyJj7RuHtM"
+    },
+    {
+      "name": "jumanahaseen",
+      "email": "jumanahaseen@gmail.com",
+      "password": "3!WAnBRHLsbL3bj",
+      "id": "Km9o0P99yiI"
+    },
+    {
+      "name": "hari1810",
+      "email": "hari@gmail.com",
+      "password": "654321",
+      "id": "-_esuS12sCc"
+    },
+    {
+      "name": "nishma",
+      "email": "nishma@gmail.com",
+      "password": "5d!BvJcG9ek8GMr",
+      "id": "dzuso9Z8ccQ",
+      "phone": "6456546576",
+      "address": "pulavazhi house ,puzhakattiri",
+      "city": "perinthalmanna",
+      "pincode": "679340"
+    }
+  ],
+  "orders": [
+    {
+      "userId": "48CShtZ4j1o",
+      "customer": {
+        "fullName": "rinsha",
+        "email": "rinshasherin@gmail.com",
+        "phone": "9947139682"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Hydrating Face Serum",
+          "image": "https://clemenceorganics.com/cdn/shop/files/Clemence_Organics_Repair_Face_Serum_6b74d494-7475-48f7-a783-ae06db483964_2000x.jpg?v=1774491668",
+          "price": 899,
+          "quantity": 9
+        }
+      ],
+      "subtotal": 8091,
+      "total": 8091,
+      "status": "Cancelled",
+      "createdAt": "2026-10-29T14:23:35.894Z",
+      "id": "4_-Tcu4Y3pc"
+    },
+    {
+      "userId": "48CShtZ4j1o",
+      "customer": {
+        "fullName": "rinsha",
+        "email": "rinshasherin@gmail.com",
+        "phone": "9947139682"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Gentle Foaming Cleanser",
+          "image": "https://kblcosmetics.com/cdn/shop/articles/facial-cleanser_1200x1200.png?v=1756406516",
+          "price": 599,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 599,
+      "total": 599,
+      "status": "Cancelled",
+      "createdAt": "2026-10-30T09:19:11.052Z",
+      "id": "E-yIX5ErWQ8"
+    },
+    {
+      "userId": "48CShtZ4j1o",
+      "customer": {
+        "fullName": "rinsha",
+        "email": "rinshasherin@gmail.com",
+        "phone": "9947139682"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "4",
+          "name": "Vitamin C Brightening Serum",
+          "image": "https://glowx.pk/cdn/shop/files/vitamin_c_serum.jpg?v=1770305346&width=416",
+          "price": 1099,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1099,
+      "total": 1099,
+      "status": "Cancelled",
+      "createdAt": "2026-10-30T09:37:48.077Z",
+      "id": "NMNfAULumbs"
+    },
+    {
+      "userId": "48CShtZ4j1o",
+      "customer": {
+        "fullName": "rinsha",
+        "email": "rinshasherin@gmail.com",
+        "phone": "9947139682"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "6",
+          "name": "Overnight Repair Cream",
+          "image": "https://medias.watsons.com.sg/publishing/WTCSG-81441-front-zoom.jpg?version=1757612408",
+          "price": 1299,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1299,
+      "total": 1299,
+      "status": "Cancelled",
+      "createdAt": "2026-10-30T09:57:13.301Z",
+      "id": "pNw_E6ACegI"
+    },
+    {
+      "userId": "48CShtZ4j1o",
+      "customer": {
+        "fullName": "rinsha",
+        "email": "rinshasherin@gmail.com",
+        "phone": "9947139682"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Hydrating Face Serum",
+          "image": "https://clemenceorganics.com/cdn/shop/files/Clemence_Organics_Repair_Face_Serum_6b74d494-7475-48f7-a783-ae06db483964_2000x.jpg?v=1774491668",
+          "price": 899,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 899,
+      "total": 899,
+      "status": "Cancelled",
+      "createdAt": "2026-10-30T10:55:45.366Z",
+      "id": "5jutMVWbQ9c"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "customer": {
+        "fullName": "jumanahaseen",
+        "email": "jumanahaseen@gmail.com",
+        "phone": "9947139682"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "6",
+          "name": "Overnight Repair Cream",
+          "image": "https://medias.watsons.com.sg/publishing/WTCSG-81441-front-zoom.jpg?version=1757612408",
+          "price": 1299,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1299,
+      "total": 1299,
+      "status": "Cancelled",
+      "createdAt": "2026-10-31T04:09:40.372Z",
+      "id": "vxTOVR-LraE"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "customer": {
+        "fullName": "jumanahaseen",
+        "email": "jumanahaseen@gmail.com",
+        "phone": "kjnjn"
+      },
+      "shippingAddress": {
+        "address": "ojnihuj",
+        "city": "iuhi",
+        "pincode": "987655"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Gentle Foaming Cleanser",
+          "image": "https://kblcosmetics.com/cdn/shop/articles/facial-cleanser_1200x1200.png?v=1756406516",
+          "price": 599,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 599,
+      "total": 599,
+      "status": "Cancelled",
+      "createdAt": "2026-10-31T04:13:16.956Z",
+      "id": "06JU9tez6fM"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "customer": {
+        "fullName": "jumanahaseen",
+        "email": "jumanahaseen@gmail.com",
+        "phone": "9947139682"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Gentle Foaming Cleanser",
+          "image": "https://kblcosmetics.com/cdn/shop/articles/facial-cleanser_1200x1200.png?v=1756406516",
+          "price": 599,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 599,
+      "total": 599,
+      "status": "Cancelled",
+      "createdAt": "2026-10-31T11:29:08.732Z",
+      "id": "qekBeqz8XQU"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "customer": {
+        "fullName": "jumanahaseen",
+        "email": "jumanahaseen@gmail.com",
+        "phone": "6456546575"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "687070"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Hydrating Face Serum",
+          "image": "https://clemenceorganics.com/cdn/shop/files/Clemence_Organics_Repair_Face_Serum_6b74d494-7475-48f7-a783-ae06db483964_2000x.jpg?v=1774491668",
+          "price": 899,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 899,
+      "total": 899,
+      "status": "Cancelled",
+      "createdAt": "2026-11-05T06:43:31.165Z",
+      "id": "Hr3D3i4QTTI"
+    },
+    {
+      "userId": "-_esuS12sCc",
+      "customer": {
+        "fullName": "hari1810",
+        "email": "hari@gmail.com",
+        "phone": "9947139682"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "123456"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Gentle Foaming Cleanser",
+          "image": "https://kblcosmetics.com/cdn/shop/articles/facial-cleanser_1200x1200.png?v=1756406516",
+          "price": 599,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 599,
+      "total": 599,
+      "status": "Placed",
+      "createdAt": "2026-11-05T12:33:48.255Z",
+      "id": "W8emSoYdVXM"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "customer": {
+        "fullName": "jumanahaseen",
+        "email": "jumanahaseen@gmail.com",
+        "phone": "6456546575"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "687070"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Hydrating Face Serum",
+          "image": "https://clemenceorganics.com/cdn/shop/files/Clemence_Organics_Repair_Face_Serum_6b74d494-7475-48f7-a783-ae06db483964_2000x.jpg?v=1774491668",
+          "price": 899,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 899,
+      "total": 899,
+      "status": "Cancelled",
+      "createdAt": "2026-11-05T14:49:32.681Z",
+      "id": "BgBvCnSgMic"
+    },
+    {
+      "userId": "dzuso9Z8ccQ",
+      "customer": {
+        "fullName": "nishma",
+        "email": "nishma@gmail.com",
+        "phone": "6456546576"
+      },
+      "shippingAddress": {
+        "address": "puzhakattiri",
+        "city": "perinthalmanna",
+        "pincode": "679350"
+      },
+      "items": [
+        {
+          "productId": "3",
+          "name": "Daily Glow Moisturizer",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "price": 749,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 749,
+      "total": 749,
+      "status": "Cancelled",
+      "createdAt": "2026-11-05T14:53:12.875Z",
+      "id": "VgWCoG6D5zk"
+    },
+    {
+      "userId": "dzuso9Z8ccQ",
+      "customer": {
+        "fullName": "nishma",
+        "email": "nishma@gmail.com",
+        "phone": "6456546576"
+      },
+      "shippingAddress": {
+        "address": "puzhakattiri",
+        "city": "perinthalmanna",
+        "pincode": "679350"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Gentle Foaming Cleanser",
+          "image": "https://kblcosmetics.com/cdn/shop/articles/facial-cleanser_1200x1200.png?v=1756406516",
+          "price": 599,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 599,
+      "total": 599,
+      "status": "Cancelled",
+      "createdAt": "2026-11-06T05:49:12.918Z",
+      "id": "lJNAINi4bvU"
+    },
+    {
+      "userId": "dzuso9Z8ccQ",
+      "customer": {
+        "fullName": "nishma",
+        "email": "nishma@gmail.com",
+        "phone": "6456546576"
+      },
+      "shippingAddress": {
+        "address": "puzhakattiri",
+        "city": "perinthalmanna",
+        "pincode": "679350"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Gentle Foaming Cleanser",
+          "image": "https://kblcosmetics.com/cdn/shop/articles/facial-cleanser_1200x1200.png?v=1756406516",
+          "price": 599,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 599,
+      "total": 599,
+      "status": "Cancelled",
+      "createdAt": "2026-11-06T05:50:02.456Z",
+      "id": "YIiNffoSX6w"
+    },
+    {
+      "userId": "dzuso9Z8ccQ",
+      "customer": {
+        "fullName": "nishma",
+        "email": "nishma@gmail.com",
+        "phone": "6456546576"
+      },
+      "shippingAddress": {
+        "address": "puzhakattiri",
+        "city": "perinthalmanna",
+        "pincode": "679350"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Hydrating Face Serum",
+          "image": "https://clemenceorganics.com/cdn/shop/files/Clemence_Organics_Repair_Face_Serum_6b74d494-7475-48f7-a783-ae06db483964_2000x.jpg?v=1774491668",
+          "price": 899,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 899,
+      "total": 899,
+      "status": "Placed",
+      "createdAt": "2026-11-06T12:59:44.257Z",
+      "id": "p66BAnV2W-I"
+    }
+  ],
+  "reviews": [
+    {
+      "productId": "1",
+      "userId": "iy287vUoExM",
+      "userName": "Ashika",
+      "rating": 5,
+      "createdAt": "2026-10-30T07:08:45.364Z",
+      "id": "Lc-RtiWSU_Q"
+    },
+    {
+      "productId": "2",
+      "userId": "48CShtZ4j1o",
+      "userName": "rinsha",
+      "rating": 5,
+      "createdAt": "2026-10-30T07:09:47.574Z",
+      "id": "jkBnjnkbRc0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
