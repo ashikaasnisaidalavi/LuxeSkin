@@ -19,6 +19,7 @@ import {
   removeFromWishlist,
 } from "../redux/wishlistSlice";
 import { useAuth } from "../hooks/useAuth";
+import Button from "../components/Button";
 
 function Home() {
   const dispatch = useDispatch();
@@ -47,20 +48,17 @@ function Home() {
     queryFn: getProducts,
   });
 
-  // Categories are generated from the API data
   const categories = [
     "All",
     ...new Set(products.map((product) => product.category)),
   ];
 
-  // Generate URL from product name
   function createProductSlug(name) {
     return encodeURIComponent(
       name.toLowerCase().trim().replace(/\s+/g, "-")
     );
   }
 
-  // Require login before cart or wishlist actions
   function handleProtectedAction(action) {
     if (!isLoggedIn) {
       navigate("/login", {
@@ -77,7 +75,6 @@ function Home() {
     action();
   }
 
-  // Filter products by search and category
   let filteredProducts = products.filter((product) => {
     const matchesSearch = product.name
       .toLowerCase()
@@ -89,7 +86,6 @@ function Home() {
     return matchesSearch && matchesCategory;
   });
 
-  // Sort products
   if (sortBy === "price-low") {
     filteredProducts.sort((a, b) => a.price - b.price);
   } else if (sortBy === "price-high") {
@@ -100,7 +96,6 @@ function Home() {
     );
   }
 
-  // Pagination
   const totalPages = Math.ceil(
     filteredProducts.length / productsPerPage
   );
@@ -130,35 +125,35 @@ function Home() {
   return (
     <main className="min-h-screen bg-luxe-cream">
       {/* Hero section */}
-      <section className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 md:grid-cols-2 md:py-20 lg:px-10">
-        <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-luxe-gold">
+      <section className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 sm:px-6 sm:py-14 md:grid-cols-2 md:gap-10 md:py-20 lg:px-10">
+        <div className="text-center md:text-left">
+          <p className="text-xs uppercase tracking-[0.2em] text-luxe-gold sm:tracking-[0.3em]">
             The Art of Skincare
           </p>
 
-          <h1 className="mt-5 text-4xl font-light leading-tight md:text-6xl">
+          <h1 className="mt-4 text-4xl font-light leading-tight sm:text-5xl md:mt-5 md:text-6xl">
             Your skin,
             <br />
             your <span className="italic">ritual.</span>
           </h1>
 
-          <p className="mt-5 max-w-md leading-7 text-luxe-muted">
+          <p className="mx-auto mt-5 max-w-md text-sm leading-7 text-luxe-muted sm:text-base md:mx-0">
             Thoughtfully selected skincare essentials for
             healthy, radiant-looking skin.
           </p>
 
           <a
             href="#collection"
-            className="mt-8 inline-flex items-center gap-3 bg-luxe-brown px-7 py-3.5 text-sm text-white transition hover:bg-luxe-gold"
+            className="mt-7 inline-flex items-center gap-3 bg-luxe-brown px-6 py-3 text-sm text-white transition hover:bg-luxe-gold sm:px-7 sm:py-3.5"
           >
-          <span className="font-serif text-base font-medium tracking-wide text-white">
-          Explore Collection
-          </span>
+            <span className="font-serif text-base font-medium tracking-wide text-white">
+              Explore Collection
+            </span>
             <ChevronRight size={17} />
           </a>
         </div>
 
-        <div className="h-[300px] overflow-hidden md:h-[430px]">
+        <div className="h-[260px] overflow-hidden sm:h-[350px] md:h-[430px]">
           <img
             src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=1000&q=85"
             alt="Skincare products"
@@ -170,52 +165,55 @@ function Home() {
       {/* Product collection */}
       <section
         id="collection"
-        className="mx-auto max-w-7xl px-5 py-12 lg:px-10"
+        className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-10"
       >
-        <div className="mb-8">
-          <p className="text-xs uppercase tracking-[0.3em] text-luxe-gold">
+        <div className="mb-7 sm:mb-8">
+          <p className="text-xs uppercase tracking-[0.2em] text-luxe-gold sm:tracking-[0.3em]">
             Discover Your Essentials
           </p>
 
-          <h2 className="mt-3 text-3xl font-light md:text-4xl">
+          <h2 className="mt-3 text-3xl font-light sm:text-4xl">
             The Collection
           </h2>
         </div>
 
         {/* Search and filters */}
-        <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex items-center gap-3 border-b border-[#d9cfc2] py-2 lg:w-72">
-            <Search size={18} className="text-luxe-muted" />
+        <div className="mb-8 flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex w-full items-center gap-3 border-b border-[#d9cfc2] py-2 lg:w-72">
+            <Search
+              size={18}
+              className="shrink-0 text-luxe-muted"
+            />
 
             <input
               type="text"
               placeholder="Search skincare..."
               value={search}
               onChange={(event) => handleSearch(event.target.value)}
-              className="w-full bg-transparent text-sm outline-none placeholder:text-luxe-muted"
+              className="w-full min-w-0 bg-transparent text-sm outline-none placeholder:text-luxe-muted"
             />
           </div>
 
           <div className="flex flex-wrap gap-2">
             {categories.map((item) => (
-              <button
+              <Button
                 key={item}
                 onClick={() => handleCategory(item)}
-                className={`px-4 py-2 text-xs transition ${
+                className={`px-3 py-2 text-xs transition sm:px-4 ${
                   category === item
                     ? "bg-luxe-brown text-white"
                     : "border border-[#e2d8cc] hover:border-luxe-brown"
                 }`}
               >
                 {item}
-              </button>
+              </Button>
             ))}
           </div>
 
           <select
             value={sortBy}
             onChange={(event) => handleSort(event.target.value)}
-            className="border border-[#e2d8cc] bg-transparent px-3 py-2 text-sm outline-none"
+            className="w-full border border-[#e2d8cc] bg-transparent px-3 py-2.5 text-sm outline-none lg:w-auto"
           >
             <option value="default">Sort: Featured</option>
             <option value="price-low">Price: Low to High</option>
@@ -252,7 +250,7 @@ function Home() {
 
         {/* Product grid */}
         {!isLoading && !isError && (
-          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
             {displayedProducts.map((product) => {
               const isWishlisted = wishlistItems.some(
                 (item) => item.id === product.id
@@ -271,18 +269,18 @@ function Home() {
               const productSlug = createProductSlug(product.name);
 
               return (
-                <article key={product.id} className="group">
+                <article key={product.id} className="group min-w-0">
                   {/* Product image */}
                   <div className="relative overflow-hidden bg-[#f0eae2]">
                     <Link to={`/products/${productSlug}`}>
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="h-72 w-full object-cover transition duration-500 group-hover:scale-105"
+                        className="h-72 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-80 lg:h-72"
                       />
                     </Link>
 
-                    <button
+                    <Button
                       onClick={() =>
                         handleProtectedAction(() => {
                           if (isWishlisted) {
@@ -297,17 +295,26 @@ function Home() {
                           ? "Remove from wishlist"
                           : "Add to wishlist"
                       }
-                      className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 transition hover:bg-white"
+                      className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 transition hover:bg-white"
                     >
-                      <Heart
+                      {/* <Heart
                         size={18}
                         className={
                           isWishlisted
                             ? "fill-red-500 text-red-500"
                             : "text-luxe-brown"
                         }
-                      />
-                    </button>
+                      /> */}
+                      <Heart
+  size={20}
+  strokeWidth={2}
+  className={`h-6 w-6 shrink-0 ${
+    isWishlisted
+      ? "fill-red-500 text-red-500"
+      : "text-luxe-brown"
+  }`}
+/>
+                    </Button>
 
                     {isOutOfStock && (
                       <span className="absolute bottom-3 left-3 bg-white px-3 py-1.5 text-xs">
@@ -336,12 +343,12 @@ function Home() {
                       {product.rating ?? "New"}
                     </p>
 
-                    <div className="mt-3 flex items-center justify-between gap-3">
+                    <div className="mt-3 flex flex-col items-start gap-3 min-[380px]:flex-row min-[380px]:items-center min-[380px]:justify-between">
                       <span className="font-medium">
                         ₹{Number(product.price).toLocaleString("en-IN")}
                       </span>
 
-                      <button
+                      <Button
                         disabled={
                           isOutOfStock ||
                           isInCart ||
@@ -354,7 +361,7 @@ function Home() {
                             }
                           })
                         }
-                        className="flex items-center gap-2 border border-luxe-brown px-3 py-2 text-xs transition hover:bg-luxe-brown hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
+                        className="inline-flex w-full items-center justify-center gap-2 border border-luxe-brown px-3 py-2 text-xs transition hover:bg-luxe-brown hover:text-white disabled:cursor-not-allowed disabled:opacity-40 min-[380px]:w-auto"
                       >
                         <ShoppingBag size={15} />
 
@@ -365,7 +372,7 @@ function Home() {
                             : reachedStockLimit
                               ? "Stock Limit"
                               : "Add to Bag"}
-                      </button>
+                      </Button>
                     </div>
                   </div>
                 </article>
@@ -376,8 +383,8 @@ function Home() {
 
         {/* Pagination */}
         {!isLoading && !isError && totalPages > 1 && (
-          <div className="mt-12 flex items-center justify-center gap-5">
-            <button
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3 sm:mt-12 sm:gap-5">
+            <Button
               onClick={() =>
                 setCurrentPage((page) => Math.max(1, page - 1))
               }
@@ -386,13 +393,13 @@ function Home() {
               aria-label="Previous page"
             >
               <ChevronLeft size={20} />
-            </button>
+            </Button>
 
             <span className="text-sm">
               Page {currentPage} of {totalPages}
             </span>
 
-            <button
+            <Button
               onClick={() =>
                 setCurrentPage((page) =>
                   Math.min(totalPages, page + 1)
@@ -403,7 +410,7 @@ function Home() {
               aria-label="Next page"
             >
               <ChevronRight size={20} />
-            </button>
+            </Button>
           </div>
         )}
       </section>

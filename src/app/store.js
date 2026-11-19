@@ -12,3 +12,12 @@ export const store = configureStore({
     wishlist: wishlistReducer,
   },
 });
+store.subscribe(() => {
+  const user = store.getState().auth.user;
+
+  if (user) {
+    sessionStorage.setItem("authUser", JSON.stringify(user));
+  } else {
+    sessionStorage.removeItem("authUser");
+  }
+});

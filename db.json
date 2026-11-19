@@ -1,17 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Hydrating Face Serum",
-      "brand": "LuxeSkin",
-      "category": "Serum",
-      "price": 899,
-      "description": "A lightweight hydrating serum for soft, radiant skin.",
-      "image": "https://clemenceorganics.com/cdn/shop/files/Clemence_Organics_Repair_Face_Serum_6b74d494-7475-48f7-a783-ae06db483964_2000x.jpg?v=1774491668",
-      "stock": 20,
-      "rating": 4.5
-    },
-    {
       "id": "2",
       "name": "Gentle Foaming Cleanser",
       "brand": "LuxeSkin",
@@ -19,8 +8,9 @@
       "price": 599,
       "description": "A gentle daily cleanser that removes dirt and impurities.",
       "image": "https://kblcosmetics.com/cdn/shop/articles/facial-cleanser_1200x1200.png?v=1756406516",
-      "stock": 15,
-      "rating": 4.3
+      "stock": 13,
+      "rating": 4.3,
+      "isDeleted": true
     },
     {
       "id": "3",
@@ -30,8 +20,9 @@
       "price": 749,
       "description": "A nourishing moisturizer for everyday hydration.",
       "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
-      "stock": 12,
-      "rating": 4.6
+      "stock": 20,
+      "rating": 4.6,
+      "isDeleted": true
     },
     {
       "id": "4",
@@ -41,7 +32,7 @@
       "price": 1099,
       "description": "A brightening serum designed for a radiant-looking complexion.",
       "image": "https://glowx.pk/cdn/shop/files/vitamin_c_serum.jpg?v=1770305346&width=416",
-      "stock": 8,
+      "stock": 7,
       "rating": 4.7
     },
     {
@@ -52,7 +43,7 @@
       "price": 699,
       "description": "A lightweight sunscreen for daily sun protection.",
       "image": "https://cdn11.bigcommerce.com/s-ilgxsy4t82/images/stencil/1280x1280/products/89251/205001/61G5vy61YYL._SL1500___90021.1664190731.jpg?c=1&imbypass=on",
-      "stock": 10,
+      "stock": 9,
       "rating": 4.4
     },
     {
@@ -63,8 +54,67 @@
       "price": 1299,
       "description": "A rich night cream for your evening skincare routine.",
       "image": "https://medias.watsons.com.sg/publishing/WTCSG-81441-front-zoom.jpg?version=1757612408",
-      "stock": 10,
+      "stock": 9,
       "rating": 4.8
+    },
+    {
+      "name": "Daily Sunscreen SPF 60",
+      "brand": "SunVeil",
+      "category": "Sunscreen",
+      "price": 699,
+      "description": "A lightweight daily sunscreen designed to provide broad-spectrum sun protection with a comfortable, non-greasy finish.",
+      "image": "https://images.pexels.com/photos/11935638/pexels-photo-11935638.jpeg?cs=srgb&dl=pexels-denys-11935638.jpg&fm=jpg",
+      "stock": 40,
+      "rating": 0,
+      "id": "ygavzkmxk6Q"
+    },
+    {
+      "name": "Ceramide Barrier Moisturizer",
+      "brand": "DermaPure",
+      "category": "Moisturizer",
+      "price": 849,
+      "description": "A nourishing face moisturizer formulated for daily hydration and to support the skin's natural moisture barrier.",
+      "image": "https://images.pexels.com/photos/13794471/pexels-photo-13794471.jpeg?cs=srgb&dl=pexels-bphet-13794471.jpg&fm=jpg",
+      "stock": 35,
+      "rating": 0,
+      "id": "uewp3RTILMA",
+      "isDeleted": true
+    },
+    {
+      "name": "jnyhgmfhndg",
+      "brand": "Lumière Skin",
+      "category": "Moisturizer",
+      "price": 567,
+      "description": "k;,jhmfgnbvghjilo",
+      "image": "https://images.pexels.com/photos/11935638/pexels-photo-11935638.jpeg?cs=srgb&dl=pexels-denys-11935638.jpg&fm=jpg",
+      "stock": 78,
+      "rating": 0,
+      "isDeleted": true,
+      "id": "t_Jx-HLriSQ"
+    },
+    {
+      "name": "sdfghj",
+      "brand": "sdfgh",
+      "category": "Cleanser",
+      "price": 560,
+      "description": "sdfghjkml",
+      "image": "https://images.pexels.com/photos/11935638/pexels-photo-11935638.jpeg?cs=srgb&dl=pexels-denys-11935638.jpg&fm=jpg",
+      "stock": 45,
+      "rating": 0,
+      "isDeleted": true,
+      "id": "popzbHr5uvM"
+    },
+    {
+      "name": "sdfgbhn",
+      "brand": "vbnm,",
+      "category": "Serum",
+      "price": 600,
+      "description": "asdfghj",
+      "image": "https://placehold.co/600x600?text=Aloe+Vera+Gel",
+      "stock": 50,
+      "rating": 0,
+      "isDeleted": true,
+      "id": "mwp_7ltCItU"
     }
   ],
   "users": [
@@ -72,7 +122,8 @@
       "name": "Ashika",
       "email": "ashikaf40@gmail.com",
       "password": "!C7L7bsnvGe4S@s",
-      "id": "iy287vUoExM"
+      "id": "iy287vUoExM",
+      "isBlocked": true
     },
     {
       "name": "rinsha",
@@ -90,7 +141,11 @@
       "name": "jumanahaseen",
       "email": "jumanahaseen@gmail.com",
       "password": "3!WAnBRHLsbL3bj",
-      "id": "Km9o0P99yiI"
+      "id": "Km9o0P99yiI",
+      "phone": "8590953997",
+      "address": "reliance house,mankav",
+      "city": "calicut",
+      "pincode": "679340"
     },
     {
       "name": "hari1810",
@@ -107,6 +162,57 @@
       "address": "pulavazhi house ,puzhakattiri",
       "city": "perinthalmanna",
       "pincode": "679340"
+    },
+    {
+      "name": "nimisha",
+      "email": "nimmi@gmail.com",
+      "password": "!8cqBPn@BQYjMC!",
+      "id": "DwPaTKJ3RTQ",
+      "phone": "8453612198",
+      "address": "kalathil house,muttakkad",
+      "city": "trivandrum",
+      "pincode": "679340"
+    },
+    {
+      "name": "fathima rinsha",
+      "email": "rinshaammayi@gmail.com",
+      "password": "M7zvXN7mUekfaj!",
+      "id": "1XJWG2EaGYc"
+    },
+    {
+      "name": "Anjoom",
+      "email": "anju@gmail.com",
+      "password": "R6Afbrf7M8w3t!V",
+      "id": "vaftBWidQLI"
+    },
+    {
+      "name": "fida",
+      "email": "fida@gmail.com",
+      "password": "n73n!iNG7uJ2m59",
+      "id": "QM5VXLkaOcw",
+      "isBlocked": false
+    },
+    {
+      "name": "sinan",
+      "email": "sinan@gmail.com",
+      "password": "sinan123",
+      "role": "customer",
+      "id": "xhSNik748Og"
+    },
+    {
+      "name": "mikku",
+      "email": "mikku@gmail.com",
+      "password": "F6zTFGN!BY9bnJe",
+      "role": "customer",
+      "id": "fj2TEGOMYjU"
+    },
+    {
+      "name": "fadil",
+      "email": "fadil@gmail.com",
+      "password": "ePNu6RnAy4EhV!v",
+      "role": "customer",
+      "id": "csuHvzfaMNw",
+      "isBlocked": false
     }
   ],
   "orders": [
@@ -133,7 +239,7 @@
       ],
       "subtotal": 8091,
       "total": 8091,
-      "status": "Cancelled",
+      "status": "Shipped",
       "createdAt": "2026-10-29T14:23:35.894Z",
       "id": "4_-Tcu4Y3pc"
     },
@@ -295,7 +401,7 @@
       ],
       "subtotal": 599,
       "total": 599,
-      "status": "Cancelled",
+      "status": "Shipped",
       "createdAt": "2026-10-31T04:13:16.956Z",
       "id": "06JU9tez6fM"
     },
@@ -376,7 +482,7 @@
       ],
       "subtotal": 599,
       "total": 599,
-      "status": "Placed",
+      "status": "Cancelled",
       "createdAt": "2026-11-05T12:33:48.255Z",
       "id": "W8emSoYdVXM"
     },
@@ -514,16 +620,396 @@
       "status": "Placed",
       "createdAt": "2026-11-06T12:59:44.257Z",
       "id": "p66BAnV2W-I"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "customer": {
+        "fullName": "jumanahaseen",
+        "email": "jumanahaseen@gmail.com",
+        "phone": "6456546575"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "calicut",
+        "pincode": "687070"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Hydrating Face Serum",
+          "image": "https://clemenceorganics.com/cdn/shop/files/Clemence_Organics_Repair_Face_Serum_6b74d494-7475-48f7-a783-ae06db483964_2000x.jpg?v=1774491668",
+          "price": 899,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 899,
+      "total": 899,
+      "status": "Cancelled",
+      "createdAt": "2026-11-10T04:02:52.857Z",
+      "id": "__6mKQXhIxw"
+    },
+    {
+      "userId": "1XJWG2EaGYc",
+      "customer": {
+        "fullName": "fathima rinsha",
+        "email": "rinshaammayi@gmail.com",
+        "phone": "8453612198"
+      },
+      "shippingAddress": {
+        "address": "puzhakattiri",
+        "city": "perinthalmanna",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Gentle Foaming Cleanser",
+          "image": "https://kblcosmetics.com/cdn/shop/articles/facial-cleanser_1200x1200.png?v=1756406516",
+          "price": 599,
+          "quantity": 15
+        }
+      ],
+      "subtotal": 8985,
+      "total": 8985,
+      "status": "Cancelled",
+      "createdAt": "2026-11-11T05:30:05.675Z",
+      "id": "lNuTs-k_vj8"
+    },
+    {
+      "userId": "1XJWG2EaGYc",
+      "customer": {
+        "fullName": "fathima rinsha",
+        "email": "rinshaammayi@gmail.com",
+        "phone": "8453612198"
+      },
+      "shippingAddress": {
+        "address": "puzhakattiri",
+        "city": "perinthalmanna",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Gentle Foaming Cleanser",
+          "image": "https://kblcosmetics.com/cdn/shop/articles/facial-cleanser_1200x1200.png?v=1756406516",
+          "price": 599,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 599,
+      "total": 599,
+      "status": "Cancelled",
+      "createdAt": "2026-11-11T06:14:35.219Z",
+      "id": "SgsVLjsmNyk"
+    },
+    {
+      "userId": "1XJWG2EaGYc",
+      "customer": {
+        "fullName": "fathima rinsha",
+        "email": "rinshaammayi@gmail.com",
+        "phone": "8453612198"
+      },
+      "shippingAddress": {
+        "address": "puzhakattiri",
+        "city": "perinthalmanna",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "3",
+          "name": "Daily Glow Moisturizer",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "price": 749,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 749,
+      "total": 749,
+      "status": "Cancelled",
+      "createdAt": "2026-11-11T06:26:00.830Z",
+      "id": "3agksdOUtNY"
+    },
+    {
+      "userId": "1XJWG2EaGYc",
+      "customer": {
+        "fullName": "fathima rinsha",
+        "email": "rinshaammayi@gmail.com",
+        "phone": "8453612198"
+      },
+      "shippingAddress": {
+        "address": "puzhakattiri",
+        "city": "perinthalmanna",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "4",
+          "name": "Vitamin C Brightening Serum",
+          "image": "https://glowx.pk/cdn/shop/files/vitamin_c_serum.jpg?v=1770305346&width=416",
+          "price": 1099,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1099,
+      "total": 1099,
+      "status": "Placed",
+      "createdAt": "2026-11-11T09:14:15.917Z",
+      "id": "clXHnjKCoe4"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "customer": {
+        "fullName": "jumanahaseen",
+        "email": "jumanahaseen@gmail.com",
+        "phone": "8590953997"
+      },
+      "shippingAddress": {
+        "address": "reliance house,mankav",
+        "city": "calicut",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "3",
+          "name": "Daily Glow Moisturizer",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "price": 749,
+          "quantity": 12
+        }
+      ],
+      "subtotal": 8988,
+      "total": 8988,
+      "status": "Cancelled",
+      "createdAt": "2026-11-13T11:19:15.255Z",
+      "id": "HTAG8NC6QPc"
+    },
+    {
+      "userId": "QM5VXLkaOcw",
+      "customer": {
+        "fullName": "fida",
+        "email": "fida@gmail.com",
+        "phone": "8590953997"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "wayanad",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Hydrating Face Serum",
+          "image": "https://clemenceorganics.com/cdn/shop/files/Clemence_Organics_Repair_Face_Serum_6b74d494-7475-48f7-a783-ae06db483964_2000x.jpg?v=1774491668",
+          "price": 899,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 899,
+      "total": 899,
+      "status": "Delivered",
+      "createdAt": "2026-11-16T07:13:57.708Z",
+      "id": "vjDeR7bO844"
+    },
+    {
+      "userId": "QM5VXLkaOcw",
+      "customer": {
+        "fullName": "fida",
+        "email": "fida@gmail.com",
+        "phone": "8590953997"
+      },
+      "shippingAddress": {
+        "address": "mankav",
+        "city": "wayanad",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "uewp3RTILMA",
+          "name": "Ceramide Barrier Moisturizer",
+          "image": "https://images.pexels.com/photos/13794471/pexels-photo-13794471.jpeg?cs=srgb&dl=pexels-bphet-13794471.jpg&fm=jpg",
+          "price": 849,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 849,
+      "total": 849,
+      "status": "Delivered",
+      "createdAt": "2026-11-16T07:18:48.025Z",
+      "id": "nmlj3a3-DuQ"
+    },
+    {
+      "userId": "DwPaTKJ3RTQ",
+      "customer": {
+        "fullName": "nimisha",
+        "email": "nimmi@gmail.com",
+        "phone": "8453612198"
+      },
+      "shippingAddress": {
+        "address": "kalathil house,muttakkad",
+        "city": "trivandrum",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "3",
+          "name": "Daily Glow Moisturizer",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "price": 749,
+          "quantity": 12
+        }
+      ],
+      "subtotal": 8988,
+      "total": 8988,
+      "status": "Cancelled",
+      "createdAt": "2026-11-17T07:18:19.553Z",
+      "id": "N0imFeeFImM"
+    },
+    {
+      "userId": "DwPaTKJ3RTQ",
+      "customer": {
+        "fullName": "nimisha",
+        "email": "nimmi@gmail.com",
+        "phone": "8453612198"
+      },
+      "shippingAddress": {
+        "address": "kalathil house,muttakkad",
+        "city": "trivandrum",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "3",
+          "name": "Daily Glow Moisturizer",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "price": 749,
+          "quantity": 12
+        }
+      ],
+      "subtotal": 8988,
+      "total": 8988,
+      "status": "Cancelled",
+      "createdAt": "2026-11-17T09:06:10.738Z",
+      "id": "1cjkDgtYjE4"
+    },
+    {
+      "userId": "DwPaTKJ3RTQ",
+      "customer": {
+        "fullName": "nimisha",
+        "email": "nimmi@gmail.com",
+        "phone": "8453612198"
+      },
+      "shippingAddress": {
+        "address": "kalathil house,muttakkad",
+        "city": "trivandrum",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "3",
+          "name": "Daily Glow Moisturizer",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "price": 749,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 749,
+      "total": 749,
+      "status": "Cancelled",
+      "createdAt": "2026-11-17T09:29:42.316Z",
+      "id": "UI3HkiJUX5U"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "customer": {
+        "fullName": "jumanahaseen",
+        "email": "jumanahaseen@gmail.com",
+        "phone": "8590953997"
+      },
+      "shippingAddress": {
+        "address": "reliance house,mankav",
+        "city": "calicut",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "4",
+          "name": "Vitamin C Brightening Serum",
+          "image": "https://glowx.pk/cdn/shop/files/vitamin_c_serum.jpg?v=1770305346&width=416",
+          "price": 1099,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1099,
+      "total": 1099,
+      "status": "Cancelled",
+      "createdAt": "2026-11-17T09:51:20.263Z",
+      "id": "9FbIEAJDd6s"
+    },
+    {
+      "userId": "csuHvzfaMNw",
+      "customer": {
+        "fullName": "fadil",
+        "email": "fadil@gmail.com",
+        "phone": "9947139682"
+      },
+      "shippingAddress": {
+        "address": "reliance house,mankav",
+        "city": "perinthalmanna",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "uewp3RTILMA",
+          "name": "Ceramide Barrier Moisturizer",
+          "image": "https://images.pexels.com/photos/13794471/pexels-photo-13794471.jpeg?cs=srgb&dl=pexels-bphet-13794471.jpg&fm=jpg",
+          "price": 849,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 849,
+      "total": 849,
+      "status": "Cancelled",
+      "createdAt": "2026-11-17T13:09:29.963Z",
+      "id": "StWNN5nK8Fc",
+      "stockRestocked": true
+    },
+    {
+      "userId": "iy287vUoExM",
+      "customer": {
+        "fullName": "Ashika",
+        "email": "ashikaf40@gmail.com",
+        "phone": "9947139682"
+      },
+      "shippingAddress": {
+        "address": "puzhakattiri",
+        "city": "perinthalmanna",
+        "pincode": "679340"
+      },
+      "items": [
+        {
+          "productId": "3",
+          "name": "Daily Glow Moisturizer",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "price": 749,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 749,
+      "total": 749,
+      "status": "Cancelled",
+      "createdAt": "2026-11-17T13:13:42.979Z",
+      "id": "bj1Ga0EFNuw"
     }
   ],
   "reviews": [
     {
-      "productId": "1",
+      "productId": null,
       "userId": "iy287vUoExM",
       "userName": "Ashika",
       "rating": 5,
       "createdAt": "2026-10-30T07:08:45.364Z",
-      "id": "Lc-RtiWSU_Q"
+      "id": "Lc-RtiWSU_Q",
+      "status": "Approved"
     },
     {
       "productId": "2",
@@ -532,6 +1018,246 @@
       "rating": 5,
       "createdAt": "2026-10-30T07:09:47.574Z",
       "id": "jkBnjnkbRc0"
+    },
+    {
+      "productId": "2",
+      "userId": "1XJWG2EaGYc",
+      "userName": "fathima rinsha",
+      "rating": 5,
+      "createdAt": "2026-11-11T05:24:22.249Z",
+      "id": "PWktUjt_cM4"
+    },
+    {
+      "productId": "3",
+      "userId": "vaftBWidQLI",
+      "userName": "Anjoom",
+      "rating": 5,
+      "createdAt": "2026-11-16T05:28:24.463Z",
+      "id": "sDJ7zw6FlX0",
+      "status": "Rejected"
+    },
+    {
+      "productId": "3",
+      "userId": "vaftBWidQLI",
+      "userName": "Anjoom",
+      "rating": 3,
+      "status": "Approved",
+      "createdAt": "2026-11-16T05:29:57.781Z",
+      "id": "uPqZj4gIqdk"
+    },
+    {
+      "productId": "ygavzkmxk6Q",
+      "userId": "vaftBWidQLI",
+      "userName": "Anjoom",
+      "rating": 4,
+      "status": "Pending",
+      "createdAt": "2026-11-16T05:31:10.648Z",
+      "id": "6txULs09LVE"
+    },
+    {
+      "productId": "ygavzkmxk6Q",
+      "userId": "vaftBWidQLI",
+      "userName": "Anjoom",
+      "rating": 4,
+      "status": "Approved",
+      "createdAt": "2026-11-16T05:31:16.866Z",
+      "id": "_3EBjX1pji0"
+    },
+    {
+      "productId": "ygavzkmxk6Q",
+      "userId": "vaftBWidQLI",
+      "userName": "Anjoom",
+      "rating": 5,
+      "status": "Pending",
+      "createdAt": "2026-11-16T06:12:58.314Z",
+      "id": "e97qPSTELq4"
+    },
+    {
+      "productId": "2",
+      "userId": "vaftBWidQLI",
+      "userName": "Anjoom",
+      "rating": 5,
+      "createdAt": "2026-11-16T06:37:30.629Z",
+      "id": "K5YYkx1FWqI"
+    },
+    {
+      "productId": "uewp3RTILMA",
+      "userId": "QM5VXLkaOcw",
+      "userName": "fida",
+      "rating": 5,
+      "createdAt": "2026-11-16T07:20:36.959Z",
+      "id": "cRXxISXn6aA"
+    }
+  ],
+  "carts": [
+    {
+      "userId": "1XJWG2EaGYc",
+      "items": [],
+      "id": "Q9eNzEZ0m-8"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "items": [],
+      "id": "heZrsBuub_A"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "items": [
+        {
+          "id": "3",
+          "name": "Daily Glow Moisturizer",
+          "brand": "LuxeSkin",
+          "category": "Moisturizer",
+          "price": 749,
+          "description": "A nourishing moisturizer for everyday hydration.",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "stock": 12,
+          "rating": 4.6,
+          "quantity": 1
+        }
+      ],
+      "id": "Uk93ojO84g0"
+    },
+    {
+      "userId": "Km9o0P99yiI",
+      "items": [
+        {
+          "id": "3",
+          "name": "Daily Glow Moisturizer",
+          "brand": "LuxeSkin",
+          "category": "Moisturizer",
+          "price": 749,
+          "description": "A nourishing moisturizer for everyday hydration.",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "stock": 12,
+          "rating": 4.6,
+          "quantity": 1
+        }
+      ],
+      "id": "YIGWB2HneFY"
+    },
+    {
+      "userId": "vaftBWidQLI",
+      "items": [
+        {
+          "id": "3",
+          "name": "Daily Glow Moisturizer",
+          "brand": "LuxeSkin",
+          "category": "Moisturizer",
+          "price": 749,
+          "description": "A nourishing moisturizer for everyday hydration.",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "stock": 12,
+          "rating": 4.6,
+          "quantity": 12
+        }
+      ],
+      "id": "s6P5N_6q240"
+    },
+    {
+      "userId": "DwPaTKJ3RTQ",
+      "items": [],
+      "id": "bs9aT9JZtH4"
+    },
+    {
+      "userId": "DwPaTKJ3RTQ",
+      "items": [
+        {
+          "id": "3",
+          "name": "Daily Glow Moisturizer",
+          "brand": "LuxeSkin",
+          "category": "Moisturizer",
+          "price": 749,
+          "description": "A nourishing moisturizer for everyday hydration.",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "stock": 12,
+          "rating": 4.6,
+          "quantity": 1
+        }
+      ],
+      "id": "agHVu3vet5Q"
+    },
+    {
+      "userId": "DwPaTKJ3RTQ",
+      "items": [
+        {
+          "id": "3",
+          "name": "Daily Glow Moisturizer",
+          "brand": "LuxeSkin",
+          "category": "Moisturizer",
+          "price": 749,
+          "description": "A nourishing moisturizer for everyday hydration.",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "stock": 12,
+          "rating": 4.6,
+          "quantity": 1
+        }
+      ],
+      "id": "xKNadK9Se70"
+    },
+    {
+      "userId": "csuHvzfaMNw",
+      "items": [],
+      "id": "N5PirT1ZpfY"
+    },
+    {
+      "userId": "iy287vUoExM",
+      "items": [],
+      "id": "GG_SBDTdBfM"
+    }
+  ],
+  "wishlists": [
+    {
+      "userId": "1XJWG2EaGYc",
+      "items": [],
+      "id": "zMDe6fQ2t-8"
+    },
+    {
+      "userId": "vaftBWidQLI",
+      "items": [],
+      "id": "2yHtHVZQN2Q"
+    },
+    {
+      "userId": "csuHvzfaMNw",
+      "items": [
+        {
+          "id": "3",
+          "name": "Daily Glow Moisturizer",
+          "brand": "LuxeSkin",
+          "category": "Moisturizer",
+          "price": 749,
+          "description": "A nourishing moisturizer for everyday hydration.",
+          "image": "https://www.nouracosmetics.com/cdn/shop/files/PhotoRoom_20230808_173600.jpg?v=1701312561&width=1445",
+          "stock": 3,
+          "rating": 4.6
+        }
+      ],
+      "id": "-KDa9svS6TM"
+    }
+  ],
+  "admins": [
+    {
+      "id": "admin1",
+      "name": "LuxeSkin Admin",
+      "email": "admin@luxeskin.com",
+      "password": "Admin@123"
+    }
+  ],
+  "sessions": [
+    {
+      "adminId": "admin1",
+      "role": "admin",
+      "id": "NEIFcCSrgGQ"
+    },
+    {
+      "adminId": "admin1",
+      "role": "admin",
+      "id": "UXj6GP2_A9Y"
+    },
+    {
+      "adminId": "admin1",
+      "role": "admin",
+      "id": "qWYXic3QU0E"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
